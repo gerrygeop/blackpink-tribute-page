@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+:root {
+  --dark-000: #131313;
+  --gray-800: #1f2937;
+  --pink-400: #f472b6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f3f4f6;
+  padding-top: 50px;
+  margin: 0;
+}
+
+/* Navbar */
+nav {
+  background-color: #252a34;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+  /* height: 50px; */
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: var(--pink-400);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Section */
+#main {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 5rem;
+}
+
+#main h1 {
+  color: var(--pink-400);
+  font-family: "Roboto", sans-serif;
+  font-size: 8vw;
+
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+}
+
+#main p {
+  margin: 0;
+  font-size: 3.5vw;
+  color: var(--gray-800);
+}
+
+#img-div {
+  background-color: white;
+  margin: 40px auto;
+  padding: 15px;
+
+  width: 950px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+#image {
+  max-width: 100%;
+}
+
+#img-caption {
+  margin-top: 10px;
+  font-weight: 500;
+  color: var(--gray-800);
+}
+
+/* Discography */
+#tribute-info {
+  margin: 50px auto;
+}
+
+#tribute-info h2 {
+  text-align: center;
+  color: var(--gray-800);
+}
+
+#tribute-info ul {
+  list-style-type: none;
+  max-width: 950px;
+  padding: 0;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#tribute-info li {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.album {
+  position: relative;
+}
+
+.album .album-img {
+  width: 100%;
+}
+
+.album .album-overlay {
+  background-color: var(--dark-000);
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  color: var(--pink-400);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+
+.album .album-overlay:hover {
+  opacity: 1;
+}
+
+.album .release-date {
+  font-size: 0.8em;
+}
+
+.album .album-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+/* Videos Section */
+#videos {
+  color: var(--gray-800);
+  text-align: center;
+  margin: 50px auto;
+  margin-bottom: 10rem;
+
+  max-width: 1200px;
+}
+
+#videos .video-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#videos .video-card {
+  padding: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+/* Follow Section */
+#follow {
+  background-color: var(--dark-000);
+  color: var(--pink-400);
+  text-align: center;
+  padding: 10px 0;
+}
+
+#follow ul {
+  list-style-type: none;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+#follow li {
+  font-size: 2em;
+  margin: 0 15px;
+}
