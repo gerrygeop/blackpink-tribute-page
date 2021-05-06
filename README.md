@@ -1,3 +1,4 @@
 ### BLACKPINK TRIBUTE PAGE
 
-[Here we go!](https://gerrygeop.github.io/batu-gunting-kertas/)
+[Click Here to See!](https://gerrygeop.github.io/blackpink-tribute-page/)
+(https://gerrygeop.github.io/blackpink-tribute-page/)
